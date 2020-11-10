@@ -1,0 +1,42 @@
+.navBar2 {
+	position: relative;
+	color: white;
+	padding-top: 5px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.selected .tx {
+	color: rgb(245, 171, 33);
+}
+
+.sections2 {
+	display: inline-block;
+}
+.section2 {
+	display: inline-block;
+	color: white;
+	font-size: 17px;
+	padding-right: 1vw;
+	padding-left: 1vw;
+	border: 20px;
+}
+
+.tx {
+	border-style: ridge;
+	border-color: rgba(255, 255, 255, 0);
+	border-width: 1.5px;
+}
+
+.tx:hover {
+	border-style: ridge;
+	border-color: white;
+	border-width: 1.5px;
+	border-radius: 2px;
+}
+
+@media only screen and (max-width: 767px) {
+	.section2 {
+		font-size: 12.8px;
+	}
+}

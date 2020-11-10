@@ -1,0 +1,45 @@
+.admin-login .adm-form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background-color: rgb(245, 242, 237);
+	position: relative;
+	height: 288px;
+	width: 460px;
+	border: 2px solid rgb(245, 242, 237);
+	border-radius: 20px;
+	bottom: 2vw;
+	z-index: 40;
+	box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+	z-index: 999;
+}
+
+.admin-login .submit-button {
+	margin-top: 35px;
+	margin-left: 31px;
+}
+
+.admin-login .input-label {
+	margin-left: 30px;
+}
+
+.admin-login .error-message {
+	position: absolute;
+	margin-left: 30px;
+}
+
+.admin-login .input-space {
+	margin-right: auto;
+	margin-left: auto;
+	width: 367px;
+}
+
+@media only screen and (max-width: 500px) {
+	.admin-login .adm-form {
+		width: 390px;
+	}
+	.admin-login .input-space {
+		width: 300px;
+	}
+}

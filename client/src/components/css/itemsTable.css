@@ -1,0 +1,50 @@
+.row {
+	justify-content: center;
+}
+
+.bar {
+	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	background-color: #c1c8e4;
+	position: relative;
+	color: #25274d;
+	font-weight: bold;
+	margin-bottom: 30px;
+	font-size: 17px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 50px;
+}
+
+.bar .sections3 {
+	display: inline-block;
+	text-align: center;
+}
+.bar .sections3 .section3 {
+	display: inline-block;
+	color: #25274d;
+	font-size: 17px;
+	padding-right: 1vw;
+
+	padding-left: 1vw;
+	border: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* .tx {
+	border-style: ridge;
+	border-color: rgba(255, 255, 255, 0);
+	border-width: 1.5px;
+}
+
+.tx:hover {
+	border-style: ridge;
+	border-color: white;
+	border-width: 1.5px;
+	border-radius: 2px;
+} */

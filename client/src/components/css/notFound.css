@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&display=swap%22%20rel=%22stylesheet');
+
+.mainbox {
+	width: 100%;
+	left: 0;
+	background-color: wheat;
+	text-align: center;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 20px;
+	margin-top: 1.6rem;
+}
+
+.not-area {
+	margin-bottom: -1rem;
+}
+
+.mainbox .roww {
+	width: 100%;
+}
+
+.num {
+	color: #192029;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 8.5rem;
+	margin-bottom: 0rem;
+}
