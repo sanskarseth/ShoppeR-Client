@@ -42,6 +42,7 @@ class Items extends Component {
 
     try{
       await deleteItem(item._id);
+      this.props.updateBadgeCount(this.props.badgeCount -1);
     }
     catch(ex){
       if(ex.response && ex.response.status===404) 
@@ -58,6 +59,7 @@ class Items extends Component {
       await additem(item._id);
       toast.success('Item added to cart...');
       // window.location='/';
+      this.props.updateBadgeCount(this.props.badgeCount +1);
     }
     catch(ex){
       if(ex.response && ex.response.status===400)

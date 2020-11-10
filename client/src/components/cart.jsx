@@ -15,6 +15,7 @@ class Cart extends Component {
     componentDidMount = async () =>{
         const itms = await getCart();
         const data = itms.data;
+        this.props.updateBadgeCount(data.length);
         this.setState({items:data});
         let sum=0;
 

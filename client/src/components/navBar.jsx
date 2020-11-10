@@ -2,7 +2,7 @@ import React from "react";
 import '../components/css/navBar.css';
 import { Link, NavLink } from "react-router-dom";
 
-const NavBar = ({user}) => {
+const NavBar = ({user,badgeCount}) => {
 
   return (
     <div className="navBar">
@@ -36,7 +36,7 @@ const NavBar = ({user}) => {
 
                 <NavLink className="section" to="/cart">
                   <i className="fa fa-shopping-cart pr-1" aria-hidden="true"></i>
-                  {/* <span className="badge badge-pill badge-warning bt"> {count} </span> */}
+                  <span className="badge badge-pill badge-warning bt"> {badgeCount} </span>
                 </NavLink>
 
                 <NavLink className="section" to="/profile">

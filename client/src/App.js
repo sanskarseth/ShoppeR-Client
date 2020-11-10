@@ -19,6 +19,7 @@ import './App.css';
 
 function App() {
 	const [user, setUser] = useState({});
+	const [badgeCount, updateBadgeCount] = useState(0);
 
 	useEffect(() => {
 		async function fetchData() {
@@ -31,7 +32,7 @@ function App() {
 	return (
 		<div className="app-component">
 			<ToastContainer />
-			<NavBar user={user} />
+			<NavBar badgeCount={badgeCount} user={user} />
 			<Switch>
 				<Route path="/register" component={RegisterForm} />
 				<Route path="/login" component={LoginForm} />
@@ -47,7 +48,14 @@ function App() {
 				<ProtectedRoute path="/items/:id" component={ItemForm} />
 				<Route
 					path="/items"
-					render={(props) => <Items {...props} user={user} />}
+					render={(props) => (
+						<Items
+							badgeCount={badgeCount}
+							{...props}
+							updateBadgeCount={updateBadgeCount}
+							user={user}
+						/>
+					)}
 				/>
 				<ProtectedRoute path="/customers" component={Customers} />
 				<Route path="/not-found" component={NotFound} />
