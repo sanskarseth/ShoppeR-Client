@@ -39,7 +39,9 @@ function App() {
 				<Route path="/logout" component={Logout} />
 				<ProtectedRoute
 					path="/cart"
-					render={(props) => <Cart {...props} user={user} />}
+					render={(props) => (
+						<Cart {...props} user={user} updateBadgeCount={updateBadgeCount} />
+					)}
 				/>
 				<ProtectedRoute
 					path="/profile"
