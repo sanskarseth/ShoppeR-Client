@@ -1,21 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import '../components/css/navBar.css';
 import { Link, NavLink } from "react-router-dom";
-import {getCart} from '../services/userService';
-
-
 
 const NavBar = ({user}) => {
-
-  const [count,setCount]=useState(0);
-
-  useEffect(() => {
-    async function fetchData(){
-      const itms = await getCart();
-      setCount(itms.data.length);
-    }
-    fetchData();
-  },[]);
 
   return (
     <div className="navBar">
@@ -49,7 +36,7 @@ const NavBar = ({user}) => {
 
                 <NavLink className="section" to="/cart">
                   <i className="fa fa-shopping-cart pr-1" aria-hidden="true"></i>
-                  <span className="badge badge-pill badge-warning bt"> {count} </span>
+                  {/* <span className="badge badge-pill badge-warning bt"> {count} </span> */}
                 </NavLink>
 
                 <NavLink className="section" to="/profile">

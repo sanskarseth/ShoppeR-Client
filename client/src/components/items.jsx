@@ -9,7 +9,7 @@ import { paginate } from "../utils/paginate";
 import {toast} from 'react-toastify';
 import _ from "lodash";
 import SearchBox from "./searchBox";
-import { additem } from "../services/userService";
+import { additem } from "../services/cartService";
 
 
 class Items extends Component {
@@ -53,9 +53,11 @@ class Items extends Component {
 
   handleBuy = async item => {
     try{
-      console.log(item);
+      // console.log(item);
+      if(item.numberInStock===0) return toast.error('Item Out of Stock...');
       await additem(item._id);
-      window.location='/';
+      toast.success('Item added to cart...');
+      // window.location='/';
     }
     catch(ex){
       if(ex.response && ex.response.status===400)

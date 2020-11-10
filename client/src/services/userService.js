@@ -10,13 +10,3 @@ export function register(user) {
 		phone: user.phone,
 	});
 }
-
-export function additem(itemId) {
-	return http.put(apiEndpoint + '/me/cart', {
-		itemadd: itemId,
-	});
-}
-
-export function getCart() {
-	return http.get(apiEndpoint + '/me/cart', {});
-}

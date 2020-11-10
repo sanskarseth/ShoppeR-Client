@@ -1,0 +1,33 @@
+.trow .remove {
+	color: blue;
+	text-decoration: underline;
+}
+
+.trow .remove:hover {
+	color: rgb(204, 6, 6);
+}
+
+.xx {
+	background-color: wheat;
+	/* height: 42rem; */
+}
+
+.trow,
+.tdata {
+	color: rgb(29, 45, 77);
+	text-align: center;
+}
+
+.sheading {
+	color: blueviolet;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.cart-value {
+	text-align: center;
+}
+
+.pay-button {
+	text-align: center;
+}

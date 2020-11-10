@@ -7,7 +7,7 @@ const ListGroup = (props) => {
 
   return(
 
-<div className="navBar2">
+<div className="navBar2 container-fluid">
     <div className='sections2'>
             {items.map(item => (
             <div 
