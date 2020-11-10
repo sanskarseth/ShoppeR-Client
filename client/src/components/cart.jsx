@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import _ from 'lodash';
 import './css/cart.css';
 import {getCart,deleteItem,deleteItems} from '../services/cartService';
-import Select from '../components/common/select';
+// import Select from '../components/common/select';
 import { toast,ToastContainer } from 'react-toastify';
 
 class Cart extends Component {
