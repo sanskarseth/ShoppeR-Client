@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Joi from "joi-browser";
 import Input from "./input";
 import Select from "./select";
+import './css/fom.css';
 
 class Form extends Component {
   state = {
@@ -50,9 +51,13 @@ class Form extends Component {
 
   renderButton(label) {
     return (
-      <button disabled={this.validate()} className="btn btn-success">
-        {label}
+      
+      <button className="mb-5 buton" 
+        disabled={this.validate()}
+        >
+          {label}
       </button>
+
     );
   }
 

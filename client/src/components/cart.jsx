@@ -35,6 +35,7 @@ class Cart extends Component {
         try{
           await deleteItem(item._id);
           this.setState({sum:this.state.sum-item.price});
+          this.props.updateBadgeCount(items.length);
         }
         catch(ex){
           if(ex.response && ex.response.status===404) 
@@ -120,7 +121,10 @@ class Cart extends Component {
                     </div>
                     <br />
                     <br />
-                    <br />
+
+                    {items.length===0 && <div className="ext"></div>}
+                    
+
                     <ToastContainer />
                     
                 </div>

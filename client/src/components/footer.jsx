@@ -22,15 +22,15 @@ class Footer extends Component {
                 <div className="row fcontent">
                         
                     <span>
-                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth"><u>Source Code</u><span role="img" aria-label="book">📝</span></a>
+                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR"><u>Source Code</u><span role="img" aria-label="book">📝</span></a>
                     </span>
                     
                     <span>
-                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth"><u>Know More</u><span role="img" aria-label="aboutme">📚</span></a> 
+                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR"><u>Know More</u><span role="img" aria-label="aboutme">📚</span></a> 
                     </span>
 
                     <span>
-                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth"><u>Report a Bug</u><span role="img" aria-label="bug">🐛</span></a> 
+                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR/issues/new"><u>Report a Bug</u><span role="img" aria-label="bug">🐛</span></a> 
                     </span>
                             
                 </div>  

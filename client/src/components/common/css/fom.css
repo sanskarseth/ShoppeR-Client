@@ -1,0 +1,21 @@
+.buton:hover {
+	background-color: rgb(142, 165, 192);
+	letter-spacing: 0.5px;
+}
+
+.buton {
+	box-sizing: border-box;
+	width: 6rem;
+	height: 2.2rem;
+	border: transparent;
+	border-radius: 10px;
+	font-family: 'Syne Mono', monospace;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: rgb(255, 196, 0);
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s;
+}

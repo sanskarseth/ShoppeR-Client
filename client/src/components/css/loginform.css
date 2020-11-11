@@ -3,11 +3,10 @@
 	margin-right: auto;
 	margin-bottom: 50px;
 	margin-top: 50px;
-	background-color: rgb(245, 242, 237);
+	background-image: url('../../images/watercolor-background_87374-69.jpg');
 	position: relative;
 	height: 288px;
 	width: 460px;
-	border: 2px solid rgb(245, 242, 237);
 	border-radius: 20px;
 	bottom: 2vw;
 	z-index: 40;
@@ -15,18 +14,27 @@
 	z-index: 999;
 }
 
+.headi {
+	font-family: 'Do Hyeon', sans-serif;
+	font-size: 50px;
+	margin-bottom: -1rem;
+}
+
 .admin-login .submit-button {
 	margin-top: 35px;
 	margin-left: 31px;
+	font-family: 'Fredoka One', cursive;
 }
 
 .admin-login .input-label {
 	margin-left: 30px;
+	font-family: 'Fredoka One', cursive;
 }
 
 .admin-login .error-message {
 	position: absolute;
-	margin-left: 30px;
+	margin-left: 33px;
+	font-family: 'Do Hyeon', sans-serif;
 }
 
 .admin-login .input-space {

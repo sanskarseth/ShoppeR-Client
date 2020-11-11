@@ -23,6 +23,7 @@ class RegisterForm extends Form {
       .min(5)
       .label("Password"),
     name: Joi.string()
+      .min(5)
       .required()
       .label("Name"),
     phone:Joi.string()
@@ -80,7 +81,7 @@ class RegisterForm extends Form {
     return (
 
         <div className="pt-5 register-form">
-          <h1 className="text-center">Register</h1>
+          <h1 className="text-center headi">Register</h1>
           <div className="container reg-form pt-4 pd-4">
             <form onSubmit={this.handleSubmit}>
               <div className="inspace">

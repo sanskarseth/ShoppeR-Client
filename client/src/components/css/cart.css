@@ -6,7 +6,7 @@
 }
 
 .trow .remove:hover {
-	color: rgb(204, 6, 6);
+	color: rgb(255, 8, 0);
 }
 
 .xx {
@@ -54,8 +54,11 @@
 	font-weight: 500;
 	text-transform: uppercase;
 	color: #000000;
-	background-color: rgb(233, 202, 103);
+	background-color: rgb(255, 196, 0);
 	cursor: pointer;
 	outline: none;
 	transition: all 0.3s;
+}
+.ext {
+	padding-bottom: 8.4rem;
 }

@@ -69,7 +69,7 @@ class LoginForm extends Form {
 
     return (
       <div className="pt-5 admin-login">
-        <h1 className="text-center">Login</h1>
+        <h1 className="text-center headi">Login</h1>
         <div className="container adm-form pt-4 pd-4">
           <form onSubmit={this.handleSubmit}>
             {this.renderInput("username", "Username")}
