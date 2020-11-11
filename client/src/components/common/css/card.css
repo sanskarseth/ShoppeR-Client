@@ -49,8 +49,10 @@
 }
 
 .plants-box figure img {
-	width: 100%;
+	height: 245px;
+	width: 369.5px;
 }
+
 .plants-box h3 {
 	text-align: center;
 	font-family: 'Libre Baskerville', serif;
