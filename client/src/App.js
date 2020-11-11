@@ -14,6 +14,7 @@ import Logout from './components/logout';
 import RegisterForm from './components/registerForm';
 import auth from './services/authService';
 import ProtectedRoute from './components/common/protectedRoute';
+import { getCart } from './services/cartService';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 
@@ -27,6 +28,14 @@ function App() {
 			setUser(userr);
 		}
 		fetchData();
+		async function fetchdata2() {
+			const itms = await getCart();
+			console.log(itms);
+			const data = itms.data.length;
+			updateBadgeCount(data);
+			// console.log(data);
+		}
+		fetchdata2();
 	}, []);
 
 	return (
