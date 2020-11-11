@@ -32,10 +32,10 @@ class LoginForm extends Form {
 
       toast.success('🎉 Login successful, Redirecting...', {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 1300,
       hideProgressBar: false,
       closeOnClick: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
       draggable: true,
       progress: undefined,
       });
@@ -51,13 +51,14 @@ class LoginForm extends Form {
         // this.setState({errors});
         toast.error('🚫 Invalid Credentials...', {
           position: "top-center",
-          autoClose: 5000,
+          autoClose: 1300,
           hideProgressBar: false,
           closeOnClick: true,
-          pauseOnHover: true,
+          pauseOnHover: false,
           draggable: true,
           progress: undefined,
           });
+
       }
     }
     

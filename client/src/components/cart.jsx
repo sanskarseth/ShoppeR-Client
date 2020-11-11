@@ -39,7 +39,15 @@ class Cart extends Component {
         }
         catch(ex){
           if(ex.response && ex.response.status===404) 
-            toast.error('item already deleted');
+          toast.warning('⚠️ Item is already deleted',{
+            position: "top-center",
+            autoClose: 1300,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            });
     
             this.setState({items:originalItems});
         }
@@ -52,14 +60,34 @@ class Cart extends Component {
         
         try{
             await deleteItems();
-            toast.success(`Successfully paid ₹ ${this.state.sum}`);
-            this.setState({sum:0});
-            window.location='/';
 
+            toast.success(`💰 Successfully paid ₹ ${this.state.sum}`,{
+                position: "top-center",
+                autoClose: 1300,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                });
+
+            setTimeout(()=>{
+                this.setState({sum:0});
+                window.location='/';
+            },1500);        
+            
         }
         catch(ex){
             if(ex.response && ex.response.status===400) 
-                toast.error('Invalid User');
+                toast.error('⚠️ Invalid User',{
+                    position: "top-center",
+                    autoClose: 1300,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                    });
 
             this.setState({items:originalItems});
         }

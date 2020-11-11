@@ -6,7 +6,7 @@ import Pagination from "./common/pagination";
 import { getItems, deleteItem } from "../services/itemService";
 import { getCategories } from "../services/categoryService";
 import { paginate } from "../utils/paginate";
-import {toast} from 'react-toastify';
+import {toast,ToastContainer} from 'react-toastify';
 import _ from "lodash";
 import SearchBox from "./searchBox";
 import { additem } from "../services/cartService";
@@ -46,7 +46,15 @@ class Items extends Component {
     }
     catch(ex){
       if(ex.response && ex.response.status===404) 
-        toast.error('item already deleted');
+        toast.warning('⚠️ Item is already deleted',{
+          position: "bottom-left",
+          autoClose: 1300,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          });
 
         this.setState({items:originalItems});
     }
@@ -55,15 +63,43 @@ class Items extends Component {
   handleBuy = async item => {
     try{
       // console.log(item);
-      if(item.numberInStock===0) return toast.error('Item Out of Stock...');
+      if(item.numberInStock===0) 
+        return toast.info('😭 Item is Out of Stock...', {
+        position: "bottom-left",
+        autoClose: 1300,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        });
+
       await additem(item._id);
-      toast.success('Item added to cart...');
+
+        toast.success('📦  Item added to cart...', {
+        position: "bottom-left",
+        autoClose: 1300,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        });
       // window.location='/';
       this.props.updateBadgeCount(this.props.badgeCount +1);
     }
     catch(ex){
       if(ex.response && ex.response.status===400)
-        toast.error('Item already in cart...');
+        toast.info('🛍️ Item already in cart!', {
+          position: "bottom-left",
+          autoClose: 1300,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: false,
+          draggable: true,
+          progress: undefined,
+          });
+          
     }
   }
 
@@ -158,6 +194,7 @@ class Items extends Component {
                 onPageChange={this.handlePageChange}
               />
           </div>
+          <ToastContainer />
       </div>
  
     );

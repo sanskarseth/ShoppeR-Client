@@ -4,7 +4,7 @@ import Form from "./common/form";
 import * as userService from '../services/userService';
 import auth from '../services/authService';
 import "./css/registerForm.css";
-import {toast} from 'react-toastify';
+import {toast,ToastContainer} from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 class RegisterForm extends Form {
@@ -39,7 +39,7 @@ class RegisterForm extends Form {
 
      toast.success('🎉 Registration successful, Redirecting...', {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 1300,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -59,9 +59,9 @@ class RegisterForm extends Form {
         // errors.username=ex.response.data;
         // this.setState({errors});
 
-        toast.error('User Already Registered, Redirecting...', {
+        toast.dark('⚠️ User Already Registered !', {
           position: "top-center",
-          autoClose: 5000,
+          autoClose: 1300,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -101,6 +101,7 @@ class RegisterForm extends Form {
               </div>
             </form>
           </div>
+          <ToastContainer />
         </div>
     );
   }
