@@ -20,7 +20,7 @@ class Card extends Component {
                     <p>
                         Clothing for students of their respective domain.<br />
                         Size can be choosen on the cart.<br />
-                        Stock Left: {numberInStock}
+                        <b><u>Stock Left: {numberInStock}</u></b>
                     </p>
                     {user===2 && <button className="ml-5 mb-5 but" type="button" onClick={() => onBuy(item)} >Buy This</button>}
                     {user===2 && <button className="ml-4 mb-5 but" type="button" onClick={() => onDelete(item)} >Delete</button>}

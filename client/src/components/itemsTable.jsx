@@ -67,8 +67,8 @@ buyColumn = {
     const { sortColumn } = this.props;
 
     if (column.path !== sortColumn.path) return null;
-    if (sortColumn.order === "asc") return <i className="fa fa-sort-asc" />;
-    return <i className="fa fa-sort-desc" />;
+    if (sortColumn.order === "asc") return <i className="fa fa-sort-asc arrow" />;
+    return <i className="fa fa-sort-desc arrow" />;
   };
     
   constructor() {
@@ -93,13 +93,14 @@ buyColumn = {
         <div className="sections3">
           Sort By:
           {this.columns.map(column => (
-          <div
+          <span
             className="clickable section3"
             key={column.path || column.key}
             onClick={() => this.raiseSort(column.path)}
-          >
-            {column.label} {this.renderSortIcon(column)}
-          </div>
+          >{" "}
+            {column.label}
+            {this.renderSortIcon(column)}
+          </span>
           ))}
 
         </div>

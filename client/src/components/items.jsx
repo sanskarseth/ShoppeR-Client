@@ -10,7 +10,7 @@ import {toast} from 'react-toastify';
 import _ from "lodash";
 import SearchBox from "./searchBox";
 import { additem } from "../services/cartService";
-
+import "./css/items.css";
 
 class Items extends Component {
 
@@ -142,7 +142,7 @@ class Items extends Component {
               >
                 Add Item
               </Link>}
-              <p>Showing {totalCount} items in the database.</p>
+              <p className="item-count">Showing {totalCount} items in the database.</p>
               <ItemsTable
                 items={items}
                 sortColumn={sortColumn}

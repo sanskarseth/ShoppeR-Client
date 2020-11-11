@@ -1,61 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+
 .footer {
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	background-color: #192029;
+	background-color: #011126;
 	color: wheat;
 	text-align: center;
-	/* margin-top: 6.1rem; */
+	font-family: 'Noto Sans JP', sans-serif;
 }
 
-.footer .row {
-	width: 100%;
-}
-
-.hrule {
-	background-color: wheat;
-	width: 70%;
-	margin-bottom: 0.4rem;
-}
-.gith {
-	color: rgb(245, 171, 33);
-	text-decoration: none;
-	cursor: pointer;
-}
-.gith:hover {
-	text-decoration: none;
+.footer .footer-logo-collection {
+	justify-content: center;
+	padding-top: 35px;
+	padding-bottom: 10px;
 }
 
 .footer-logo {
-	height: 3.5em;
+	height: 5em;
 	width: auto;
 	margin: 0px 1px;
-	margin-top: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
-.footer-logo-collection {
+.fcontent {
+	padding: 1em;
 	display: flex;
-	float: right;
-	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
 	flex-wrap: wrap;
-	padding: 3em;
+	flex-direction: row;
 }
 
-.par {
-	display: flex;
-	flex-wrap: wrap;
-	float: left;
-	justify-content: center;
-	padding: 3em;
+.rule-bottom {
+	background-color: wheat;
+	width: 60%;
+	margin-top: -1px;
 }
 
-.love {
-	margin-top: -0.2rem;
-	margin-bottom: 0.5rem;
+.fcontent .flink {
+	letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 575px) {
-	.footer-logo {
-		margin-top: -3rem;
-	}
+.flink {
+	color: rgb(245, 171, 33);
+	text-decoration: none;
+	transition: color 0.5s;
+}
+
+.flink:hover {
+	text-decoration: none;
+}
+
+.fcaption {
+	margin-top: -0.9rem;
+	padding-bottom: 0.5rem;
+	word-spacing: 1px;
 }

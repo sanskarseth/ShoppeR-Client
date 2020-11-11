@@ -4,17 +4,17 @@
 
 .bar2 {
 	font-style: italic;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
-	background-color: #c1c8e4;
+	width: 60%;
+	background-color: #ccd1d9;
 	position: relative;
 	color: #25274d;
 	font-weight: bold;
 	margin-bottom: 30px;
-	font-size: 17px;
+	font-size: 15px;
 	text-align: center;
 	text-transform: uppercase;
 	border-radius: 50px;

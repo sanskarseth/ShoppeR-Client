@@ -17,6 +17,7 @@ import ProtectedRoute from './components/common/protectedRoute';
 import { getCart } from './services/cartService';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+// import Preloader from './components/preloader';
 
 function App() {
 	const [user, setUser] = useState({});
@@ -30,7 +31,7 @@ function App() {
 		fetchData();
 		async function fetchdata2() {
 			const itms = await getCart();
-			console.log(itms);
+			// console.log(itms);
 			const data = itms.data.length;
 			updateBadgeCount(data);
 			// console.log(data);
@@ -41,6 +42,7 @@ function App() {
 	return (
 		<div className="app-component">
 			<ToastContainer />
+			{/* <Preloader /> */}
 			<NavBar badgeCount={badgeCount} user={user} />
 			<Switch>
 				<Route path="/register" component={RegisterForm} />

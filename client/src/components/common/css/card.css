@@ -5,43 +5,43 @@
 	height: 2.2rem;
 	border: transparent;
 	border-radius: 10px;
-	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
 	color: #000000;
-	background-color: rgb(245, 171, 33);
+	background-color: #ccd1d9;
 	cursor: pointer;
 	outline: none;
+	transition: all 0.3s;
 }
 
 .but:hover,
 .but-1:hover {
-	background-color: #79b0a1;
+	background-color: rgb(245, 171, 33);
+	letter-spacing: 0.5px;
 }
 
 .but-1 {
-	margin-left: 8.4rem;
+	margin-left: 7.6rem;
 	box-sizing: border-box;
 	width: 8rem;
 	height: 2.2rem;
 	border: transparent;
 	border-radius: 10px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 15px;
+	font-family: 'Syne Mono', monospace;
+	font-size: 18px;
 	font-weight: 500;
 	text-transform: uppercase;
-	letter-spacing: 0.2em;
 	color: #000000;
-	background-color: rgb(245, 171, 33);
+	background-color: #ccd1d9;
 	cursor: pointer;
 	outline: none;
+	transition: all 0.3s;
 }
 
 .plants-box {
 	display: block;
-	background-color: #232f3e;
+	background-color: #142740;
 	box-shadow: #dcd8d8 0px 1px 3px 0px;
 	margin-bottom: 30px;
 	margin-left: auto;
@@ -53,6 +53,7 @@
 }
 .plants-box h3 {
 	text-align: center;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 26px;
 	line-height: 36px;
 	font-weight: 600;
@@ -62,13 +63,8 @@
 .plants-box p {
 	text-align: center;
 	font-size: 17px;
+	font-family: 'Source Serif Pro', serif;
 	line-height: 30px;
 	padding: 0px 20px 14px 20px;
 	color: wheat;
 }
-/* 
-@media only screen and (max-width: 1000px) {
-	.box {
-		margin-left: 5px;
-	}
-} */

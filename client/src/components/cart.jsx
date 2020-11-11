@@ -94,7 +94,10 @@ class Cart extends Component {
                                 >
                                     <td className="tdata">{_.indexOf(items,item) + 1}</td>
                                     <td className="tdata">{item.title}</td>
-                                    <td className="tdata">L</td>
+                                    <td className="tdata">
+                                        L
+                                        
+                                    </td>
                                     <td className="tdata">₹ {item.price}</td>
                                     <td className="remove clickable" onClick={() => this.handleDelete(item)}>
                                         Remove
@@ -106,7 +109,14 @@ class Cart extends Component {
                     <br />
                     <h4 className="cart-value">Total Cart Value: ₹ {sum}</h4>
                     <div className="pay-button">
-                        {sum!==0 && <button className="btn btn-primary" onClick={this.handlePay}>Pay Now</button>}
+                        {sum!==0 && 
+                            <button 
+                                className="ml-4 mb-5 butt" 
+                                type="button" 
+                                onClick={this.handlePay} >
+                                PAY NOW
+                            </button>
+                        }
                     </div>
                     <br />
                     <br />

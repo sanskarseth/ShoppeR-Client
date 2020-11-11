@@ -9,7 +9,7 @@ const NavBar = ({user,badgeCount}) => {
       <div className="upper">
         <div className='logo'>
           <Link className="logo-text" to="/">
-            ShoppeR@RnC
+            ShoppeR
           </Link> 
         </div>
         
