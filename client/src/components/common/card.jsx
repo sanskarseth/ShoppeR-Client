@@ -55,8 +55,8 @@ class Card extends Component {
                         Size can be choosen on the cart.<br />
                         <b><u>Stock Left: {numberInStock}</u></b>
                     </p>
-                    {user===2 && <button className="ml-5 mb-5 but" type="button" onClick={() => onBuy(item)} >Buy This</button>}
-                    {user===2 && <button className="ml-4 mb-5 but" type="button" onClick={() => onDelete(item)} >Delete</button>}
+                    {user===2 && <button className="but" type="button" onClick={() => onBuy(item)} >Buy This</button>}
+                    {user===2 && <button className="but" type="button" onClick={() => onDelete(item)} >Delete</button>}
 
                     {user===1 &&<button className="mb-5 but-1" type="button" onClick={() => onBuy(item)} >Buy This</button>}
                 </div>

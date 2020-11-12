@@ -3,11 +3,10 @@
 	margin-right: auto;
 	margin-bottom: 50px;
 	margin-top: 50px;
-	background-color: rgb(245, 242, 237);
+	background-image: url('../../images/CWVgt8S-black-and-blue-backgrounds\ \(1\).jpg');
 	position: relative;
 	height: 480px;
 	width: 460px;
-	border: 2px solid rgb(245, 242, 237);
 	border-radius: 20px;
 	bottom: 2vw;
 	z-index: 40;
@@ -23,12 +22,15 @@
 .item-get .input-label,
 .item-get .select {
 	margin-left: 2px;
-	margin-top: 6px;
+	font-family: 'Fredoka One', cursive;
+	margin-top: 3px;
+	color: #c5cbd4;
 }
 
 .item-get .error-message {
 	position: absolute;
 	margin-left: 2px;
+	font-family: 'Do Hyeon', sans-serif;
 }
 
 .item-get .inpspace {

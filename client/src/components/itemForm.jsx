@@ -83,7 +83,7 @@ class ItemForm extends Form {
     return (
 
       <div className="pt-5 item-get">
-          <h1 className="text-center">Item Form</h1>
+          <h1 className="text-center headi">Item Form</h1>
           <div className="container item-form pt-4 pd-4">
             <form onSubmit={this.handleSubmit}>
               <div className="inpspace">

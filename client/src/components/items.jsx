@@ -18,7 +18,7 @@ class Items extends Component {
     items: [],
     categories: [],
     currentPage: 1,
-    pageSize: 6,
+    pageSize: 9,
     searchQuery: "",
     selectedCategory: null,
     sortColumn: { path: "title", order: "asc" }
@@ -178,6 +178,7 @@ class Items extends Component {
               >
                 Add Item
               </Link>}
+
               <p className="item-count">Showing {totalCount} items in the database.</p>
               <ItemsTable
                 items={items}

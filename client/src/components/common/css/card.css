@@ -1,8 +1,8 @@
 .but {
-	margin-right: -0.8rem;
 	box-sizing: border-box;
-	width: 8rem;
-	height: 2.2rem;
+	margin-left: 27px;
+	width: 7rem;
+	height: 2rem;
 	border: transparent;
 	border-radius: 10px;
 	font-size: 15px;
@@ -22,7 +22,7 @@
 }
 
 .but-1 {
-	margin-left: 7rem;
+	margin-left: 5.5rem;
 	box-sizing: border-box;
 	width: 8rem;
 	height: 2.2rem;
@@ -46,14 +46,13 @@
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 45rem;
-	width: 22rem;
+	height: 37.5rem;
+	width: 19rem;
 }
 
 .plants-box figure img {
-	height: 22rem;
-	width: 370px;
-	margin-bottom: 0rem;
+	height: 19rem;
+	width: 19rem;
 }
 
 .plants-box h3 {
@@ -62,7 +61,7 @@
 	font-size: 26px;
 	line-height: 36px;
 	font-weight: 600;
-	padding: 16px 20px 6px 20px;
+	padding-bottom: 0px;
 	color: wheat;
 }
 .plants-box p {
@@ -70,6 +69,7 @@
 	font-size: 17px;
 	font-family: 'Source Serif Pro', serif;
 	line-height: 30px;
-	padding: 0px 20px 14px 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 	color: wheat;
 }

@@ -3,9 +3,9 @@
 	margin-right: auto;
 	margin-bottom: 50px;
 	margin-top: 50px;
-	background-image: url('../../images/photo-1464618663641-bbdd760ae84a.jfif');
+	background-image: url('../../images/CWVgt8S-black-and-blue-backgrounds\ \(1\).jpg');
 	position: relative;
-	height: 450px;
+	height: 462px;
 	width: 470px;
 	border-radius: 20px;
 	bottom: 2vw;
@@ -24,6 +24,7 @@
 	margin-left: 35px;
 	font-family: 'Fredoka One', cursive;
 	margin-top: 3px;
+	color: #c5cbd4;
 }
 
 .register-form .error-message {
