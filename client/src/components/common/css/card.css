@@ -1,5 +1,5 @@
 .but {
-	margin: 0 40px 0 16px;
+	margin-right: -0.8rem;
 	box-sizing: border-box;
 	width: 8rem;
 	height: 2.2rem;
@@ -22,7 +22,7 @@
 }
 
 .but-1 {
-	margin-left: 7.6rem;
+	margin-left: 7rem;
 	box-sizing: border-box;
 	width: 8rem;
 	height: 2.2rem;
@@ -46,11 +46,14 @@
 	margin-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
+	height: 45rem;
+	width: 22rem;
 }
 
 .plants-box figure img {
-	height: 245px;
+	height: 22rem;
 	width: 370px;
+	margin-bottom: 0rem;
 }
 
 .plants-box h3 {
