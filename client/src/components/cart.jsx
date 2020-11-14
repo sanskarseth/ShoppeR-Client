@@ -110,6 +110,7 @@ class Cart extends Component {
                             <tr className="trow">
                                 <th className="tdata" scope="col">#</th>
                                 <th className="tdata" scope="col">Item</th>
+                                <th className="tdata" scope="col"></th>
                                 <th className="tdata" scope="col">Size</th>
                                 <th className="tdata" scope="col">Price</th>
                             </tr>
@@ -123,6 +124,9 @@ class Cart extends Component {
                                 >
                                     <td className="tdata">{_.indexOf(items,item) + 1}</td>
                                     <td className="tdata">{item.title}</td>
+                                    <td className="tdata">
+                                        <img className="im" src={item.photo} alt="img"/>
+                                    </td>
                                     <td className="tdata">
                                         L
                                         

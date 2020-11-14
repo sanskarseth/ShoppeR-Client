@@ -3,6 +3,7 @@ import "./css/footer.css";
 import { DiReact, DiMongodb, DiGithubBadge } from "react-icons/di";
 import { FaNode } from "react-icons/fa";
 import { SiNetlify } from "react-icons/si";
+import { SiFirebase } from "react-icons/si";
 import { GrHeroku } from "react-icons/gr";
 
 class Footer extends Component {
@@ -14,6 +15,7 @@ class Footer extends Component {
                     <DiReact className="footer-logo" style={{ color: "#61dafb" }} />
                     <FaNode className="footer-logo" style={{ color: "#026e00" }} />
                     <DiMongodb className="footer-logo" style={{ color: "#13aa52" }} />
+                    <SiFirebase className="footer-logo" style={{ color: "FFA611" }} />
                     <SiNetlify className="footer-logo" style={{ color: "#227aa9" }} />
                     <GrHeroku className="footer-logo" style={{ color: "#79589f" }} />
                     <DiGithubBadge className="footer-logo" style={{ color: "white" }} />

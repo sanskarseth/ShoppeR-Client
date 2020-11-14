@@ -18,9 +18,15 @@
 	width: 100%;
 }
 
+.msg {
+	margin-top: -5rem;
+	padding-bottom: 20px;
+}
+
 .num {
 	color: #192029;
 	font-family: 'Nunito Sans', sans-serif;
 	font-size: 8.5rem;
-	margin-bottom: 0rem;
+	/* margin-bottom: 12rem; */
+	padding-bottom: 7.1rem;
 }

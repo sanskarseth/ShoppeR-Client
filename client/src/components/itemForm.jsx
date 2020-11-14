@@ -5,16 +5,18 @@ import "./css/itemForm.css";
 import { getItem, saveItem } from "../services/itemService";
 import { getCategories } from "../services/categoryService";
 
+
 class ItemForm extends Form {
   state = {
     data: {
       title: "",
       categoryId: "",
       numberInStock: "",
-      price: ""
+      price: "",
+      photo:""
     },
     categories: [],
-    errors: {}
+    errors: {},
   };
 
   schema = {
@@ -22,6 +24,7 @@ class ItemForm extends Form {
     title: Joi.string()
       .required()
       .min(5)
+      .max(255)
       .label("Title"),
     categoryId: Joi.string()
       .required()
@@ -29,13 +32,16 @@ class ItemForm extends Form {
     numberInStock: Joi.number()
       .required()
       .min(0)
-      .max(100)
+      .max(255)
       .label("Number in Stock"),
     price: Joi.number()
       .required()
       .min(0)
       .max(10000)
-      .label("Price")
+      .label("Price"),
+    photo : Joi.string()
+    .uri()
+    .required()
   };
 
  async populateCategories() {
@@ -50,7 +56,7 @@ class ItemForm extends Form {
     if (itemId === "new") return;
 
     const {data:item} = await getItem(itemId);
-    this.setState({ data: this.mapToViewModel(item) });
+    this.setState({ data: this.mapToViewModel(item)});
   }
   catch(ex){
     if(ex.response && ex.response.status===404)
@@ -69,9 +75,12 @@ class ItemForm extends Form {
       title: item.title,
       categoryId: item.category._id,
       numberInStock: item.numberInStock,
-      price: item.price
+      price: item.price,
+      photo : item.photo
     };
   }
+
+  
 
   doSubmit = async () => {
     await saveItem(this.state.data);
@@ -97,6 +106,9 @@ class ItemForm extends Form {
               </div>
               <div className="inpspace">
                 {this.renderInput("price", "Price")}
+              </div>
+              <div>
+                {this.renderFile()}
               </div>
               <div className="save-button">
                 {this.renderButton("Save")}

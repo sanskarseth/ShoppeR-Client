@@ -19,3 +19,45 @@
 	outline: none;
 	transition: all 0.3s;
 }
+
+.filespace {
+	margin-top: 30px;
+	margin-left: 30px;
+	font-family: 'Syne Mono', monospace;
+	font-size: 16px;
+}
+
+.fil {
+	color: red;
+}
+
+.fil2 {
+	color: rgb(65, 190, 65);
+}
+
+.up {
+	margin-top: 0px;
+	box-sizing: border-box;
+	width: 4.4rem;
+	height: 1.7rem;
+	border: transparent;
+	border-radius: 10px;
+	font-family: 'Syne Mono', monospace;
+	font-size: 18px;
+	font-weight: 500;
+	color: #2b1e1e;
+	background-color: rgb(65, 190, 65);
+	cursor: pointer;
+	outline: none;
+	transition: all 0.1s;
+}
+
+.up:hover {
+	background-color: green;
+	color: #3f2f2f;
+}
+
+.aft {
+	color: green;
+	position: absolute;
+}
