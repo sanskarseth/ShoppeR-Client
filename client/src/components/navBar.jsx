@@ -14,9 +14,9 @@ const NavBar = ({user,badgeCount}) => {
         </div>
         
         <div className='accountStuff'>
-          {user && user.isAdmin &&
+          {/* {user && user.isAdmin &&
               <NavLink className="section" to="/customers">History</NavLink>
-          }
+          } */}
           {!user &&
             <React.Fragment>
 

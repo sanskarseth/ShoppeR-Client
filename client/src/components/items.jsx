@@ -161,6 +161,7 @@ class Items extends Component {
 
     const { totalCount, data: items } = this.getPagedData();
 
+
     return (
       <div>
         <Cat

@@ -15,12 +15,15 @@ import RegisterForm from './components/registerForm';
 import auth from './services/authService';
 import ProtectedRoute from './components/common/protectedRoute';
 import { getCart } from './services/cartService';
+// import Loader from './components/Loader';
 import 'react-toastify/dist/ReactToastify.css';
+
 import './App.css';
 
 function App() {
 	const [user, setUser] = useState({});
 	const [badgeCount, updateBadgeCount] = useState(0);
+	// const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
 		async function fetchData() {
@@ -29,12 +32,17 @@ function App() {
 		}
 		fetchData();
 		async function fetchdata2() {
+			// setLoading(true);
 			const itms = await getCart();
+			// setLoading(false);
+
 			const data = itms.data.length;
 			updateBadgeCount(data);
 		}
-		fetchdata2();
+		if (user.name) fetchdata2();
 	}, []);
+
+	// if (loading) return <Loader />;
 
 	return (
 		<div className="app-component">
