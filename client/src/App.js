@@ -39,7 +39,8 @@ function App() {
 			const data = itms.data.length;
 			updateBadgeCount(data);
 		}
-		if (user.name) fetchdata2();
+		// if (user.name)
+		fetchdata2();
 	}, []);
 
 	// if (loading) return <Loader />;
