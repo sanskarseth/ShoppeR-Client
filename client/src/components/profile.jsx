@@ -14,7 +14,7 @@ class Profile extends Component {
         const historyy = await getHistory();
 
         this.setState({history:historyy.data});
-        console.log(this.state.history);
+        // console.log(this.state.history);
     }
 
     render() {

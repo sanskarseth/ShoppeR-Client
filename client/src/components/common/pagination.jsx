@@ -7,9 +7,12 @@ const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pagesCount = Math.ceil(itemsCount / pageSize);
   if (pagesCount === 1) return null;
   const pages = _.range(1, pagesCount + 1);
+  console.log(pages);
 
   return (
     <div className="bar2">
+      {/* <i className="fa fa-angle-double-left"></i>
+      <i className="fa fa-angle-double-right"></i> */}
       <div className="sections4">
         Page:
         {pages.map(page => (

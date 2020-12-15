@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Syne+Tactile&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 .navBar .upper {
-	background-color: #011126;
+	background-color: #000000;
 	height: 60px;
 	color: white;
 	padding-top: 5px;
 }
 
 .navBar .down {
-	background-color: #142740;
-	height: 40px;
+	background-color: #1b1b1b;
+	/* height: 40px; */
 	position: absolute;
 	width: 100%;
 	margin-bottom: 50px;
@@ -26,15 +26,15 @@
 }
 
 .logo-text {
-	font-family: 'Pacifico', cursive;
-	color: #c5cbd4;
-	font-size: 30px;
+	font-family: 'Rock Salt', cursive;
+	color: #ffc107;
+	font-size: 28px;
 	transition: all 0.2s;
-	text-shadow: 0.08em 0.13em 0em rgb(0, 0, 0);
+	text-shadow: 0.05em 0.05em 0em #ffc10741;
 }
 
 .logo-text:hover {
-	color: #ccd1d9;
+	color: #ffc107;
 	text-decoration: none;
 	letter-spacing: 3px;
 }
@@ -42,15 +42,15 @@
 .accountStuff {
 	float: right;
 	margin-right: 20px;
-	font-family: 'Libre Baskerville', serif;
+	font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .section {
 	display: inline-block;
 	vertical-align: top;
 	color: #d8e4f5;
-	font-size: 20px;
-	margin-top: 7px;
+	font-size: 19px;
+	margin-top: 9px;
 	margin-left: 10px;
 	transition: color 1s;
 }

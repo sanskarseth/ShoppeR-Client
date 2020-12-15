@@ -2,16 +2,20 @@
 
 .navBar2 {
 	position: relative;
-	background-color: #142740;
-	color: #f2f2f2;
+	background-color: #1b1b1b;
+	color: #ffc107;
 	padding-top: 5px;
 	margin-bottom: 30px;
 	text-align: center;
-	font-family: 'Goldman', cursive;
+	font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .selected .tx {
-	color: rgb(245, 171, 33);
+	color: #ffc107;
+	border-bottom: 1px solid #ffc107;
+	padding-bottom: 3.6px;
+	border-bottom-width: 3.5px;
+	border-bottom-style: solid;
 }
 
 .sections2 {
@@ -19,7 +23,7 @@
 }
 .section2 {
 	display: inline-block;
-	color: #f2f2f2;
+	color: #d8e4f5;
 	font-size: 16px;
 	padding-right: 1vw;
 	padding-left: 1vw;
@@ -30,12 +34,5 @@
 	border-style: ridge;
 	border-color: rgba(255, 255, 255, 0);
 	border-width: 1.5px;
-	transition: color 0.3s;
-}
-
-.tx:hover {
-	border-style: ridge;
-	border-color: #f2f2f2;
-	border-width: 1.5px;
-	border-radius: 2px;
+	transition: color 0.2s;
 }
