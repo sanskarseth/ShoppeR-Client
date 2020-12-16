@@ -7,24 +7,20 @@ const Pagination = ({ itemsCount, pageSize, currentPage, onPageChange }) => {
   const pagesCount = Math.ceil(itemsCount / pageSize);
   if (pagesCount === 1) return null;
   const pages = _.range(1, pagesCount + 1);
-  console.log(pages);
+  // console.log(pages);
+
+
 
   return (
     <div className="bar2">
-      {/* <i className="fa fa-angle-double-left"></i>
-      <i className="fa fa-angle-double-right"></i> */}
-      <div className="sections4">
-        Page:
-        {pages.map(page => (
-          <div
-            key={page}
-            className={`${page === currentPage ? "page-active" : "page-item"} section4`}
-          >
-            <div className="clickable" onClick={() => onPageChange(page)}>
-              {page}
-            </div>
-          </div>
-        ))}
+      <div className="content-pagination">
+        {currentPage-1<1 && <i className="fa fa-angle-double-left arrod" ></i>}
+        {currentPage-1>=1 && <i className="fa fa-angle-double-left clickable arro" onClick={() => onPageChange(pages[currentPage-2])}></i>}
+        <div className="pgcontent">
+          {"    "}{currentPage} of {pagesCount}{"    "}
+        </div>
+        {currentPage+1<=pagesCount && <i className="fa fa-angle-double-right clickable arro" onClick={() => onPageChange(pages[currentPage])}></i>}
+        {currentPage+1>pagesCount && <i className="fa fa-angle-double-right arrod"></i>}
       </div>
     </div>
   );

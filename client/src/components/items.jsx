@@ -180,7 +180,7 @@ class Items extends Component {
                 Add Item
               </Link>}
 
-              <p className="item-count">Showing {totalCount} items in the database.</p>
+              {/* <p className="item-count">Showing {totalCount} items in the database.</p> */}
               <ItemsTable
                 items={items}
                 sortColumn={sortColumn}

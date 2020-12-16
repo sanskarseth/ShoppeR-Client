@@ -48,6 +48,10 @@
 	height: 34.5rem;
 	width: 100%;
 	border: 1px solid;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
 	box-shadow: 1px 1px 3px 2px #b9b1b1;
 }
 

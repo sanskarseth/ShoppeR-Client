@@ -3,44 +3,31 @@
 }
 
 .bar2 {
-	font-style: italic;
-	font-family: 'Libre Baskerville', serif;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 60%;
-	background-color: #ccd1d9;
 	position: relative;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+	width: 100%;
+	/* background-color: #ccd1d9; */
 	color: #25274d;
 	font-weight: bold;
-	margin-bottom: 30px;
-	font-size: 15px;
-	text-align: center;
-	text-transform: uppercase;
 	border-radius: 50px;
+	font-style: italic;
+	font-family: 'Libre Baskerville', serif;
 }
 
-.sections4 {
-	display: inline-block;
-}
-.section4 {
-	display: inline-block;
-	color: #25274d;
-	font-size: 17px;
-	padding-right: 1vw;
-	padding-left: 1vw;
-	border: 20px;
+.pgcontent {
+	display: inline;
+	font-size: 20px;
 }
 
-.clickable {
-	border-style: ridge;
-	border-color: rgba(255, 255, 255, 0);
-	border-width: 1.5px;
+.bar2 .arro {
+	font-size: 35px;
 }
 
-.page-active {
-	border-style: ridge;
-	border-color: white;
-	border-width: 1.5px;
-	border-radius: 2px;
+.bar2 .arrod {
+	font-size: 35px;
+	color: #25274dc2;
 }
