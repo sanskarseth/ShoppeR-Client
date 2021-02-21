@@ -3,3 +3,10 @@
 .item-count {
 	font-family: 'Libre Baskerville', serif;
 }
+
+.noitems {
+	margin-top: 12.1rem;
+	margin-bottom: 12.1rem;
+	display: flex;
+	justify-content: center;
+}

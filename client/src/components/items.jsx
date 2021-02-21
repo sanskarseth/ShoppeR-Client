@@ -10,6 +10,7 @@ import {toast,ToastContainer} from 'react-toastify';
 import _ from "lodash";
 import SearchBox from "./searchBox";
 import { additem } from "../services/cartService";
+import ReactLoading from 'react-loading';
 import "./css/items.css";
 
 class Items extends Component {
@@ -159,8 +160,9 @@ class Items extends Component {
 
     if (count === 0) 
       return (
-        <div>
-          <p>There are no items in the database.</p>
+        <div className="noitems">
+          {/* <p>There are no items in the database.</p> */}
+          <ReactLoading type={"spinningBubbles"} color={"orange"} />
         </div>
       
     );
