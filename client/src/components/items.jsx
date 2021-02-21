@@ -157,7 +157,13 @@ class Items extends Component {
     const { pageSize, currentPage, sortColumn, searchQuery } = this.state;
     const {user} = this.props;
 
-    if (count === 0) return <p>There are no items in the database.</p>;
+    if (count === 0) 
+      return (
+        <div>
+          <p>There are no items in the database.</p>
+        </div>
+      
+    );
 
     const { totalCount, data: items } = this.getPagedData();
 
