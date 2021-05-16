@@ -24,16 +24,17 @@ class Footer extends Component {
                 <div className="row fcontent">
                         
                     <span>
-                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR"><u>Source Code</u><span role="img" aria-label="book">📝</span></a>
+                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR"><u>Client Code</u><span role="img" aria-label="book">📝</span></a>
                     </span>
                     
                     <span>
-                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR"><u>Know More</u><span role="img" aria-label="aboutme">📚</span></a> 
-                    </span>
-
-                    <span>
                         <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR/issues/new"><u>Report a Bug</u><span role="img" aria-label="bug">🐛</span></a> 
                     </span>
+                    
+                    <span>
+                        <a className="flink" rel="noopener noreferrer" target="_blank" href="https://github.com/sanskarseth/ShoppeR-server"><u>Server Code</u><span role="img" aria-label="aboutme">📚</span></a> 
+                    </span>
+
                             
                 </div>  
 

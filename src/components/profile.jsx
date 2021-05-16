@@ -25,11 +25,13 @@ class Profile extends Component {
                 <br/><br/>
                 <h1 className="sheading">Profile Page</h1>
                 {user && 
-                    <h5 className="profile-details"><b>
-                        {'Name: '}{user.name}<br/>
-                        {'Email: '}{user.email}<br/>
-                        {'Phone No.: '}{user.phone}<br/>
-                    </b></h5>
+                    <div className="profile-details">
+                        <b>
+                            {'Name: '}{user.name}<br/>
+                            {'Email: '}{user.email}<br/>
+                            {'Phone No.: '}{user.phone}<br/>
+                        </b>
+                    </div>
                 }
                 <br />
 
@@ -42,6 +44,7 @@ class Profile extends Component {
                                 <th className="tdata" scope="col">Date</th>
                                 <th className="tdata" scope="col">Items</th>
                                 <th className="tdata" scope="col">Amount Paid</th>
+                                {user && user.isAdmin && <th className="tdata" scope="col">Delivered</th> }
                             </tr>
                         </thead>
                         <tbody>
@@ -64,6 +67,12 @@ class Profile extends Component {
                                         <div key={Math.random()}>{'₹ '}{item.price}<br/>
                                         </div>
                                         ))}
+                                </td>
+                                <td className="tdata">
+                                    <label class="switch">
+                                        <input type="checkbox" checked={false}/>
+                                        <span class="slider round"></span>
+                                    </label>  
                                 </td>
 
                             </tr>
