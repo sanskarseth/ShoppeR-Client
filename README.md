@@ -1,17 +1,31 @@
 # ShoppeR
 
 This is an e-commerce website for selling items in the college and currently used by different clubs of the college.
+
+
+# ShoppeR-Client
+
+This is the client-side of the website which is made with React and MERN Stack.
+
 ## Installation
 
-Use the package manager [npm](https://www.npmjs.com/) to install ShoppeR.
+Use the package manager [npm](https://www.npmjs.com/) to install ShoppeR-Client.
 
 ```bash
 npm install
+```
+## Running
+
+Use the package manager [npm](https://www.npmjs.com/) to run ShoppeR-Client.
+
+```bash
+npm start
 ```
 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 
 ## Packages Used
 * axios
