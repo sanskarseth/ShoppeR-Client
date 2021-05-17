@@ -5,7 +5,7 @@ This is an e-commerce website for selling items in the college and currently use
 
 # ShoppeR-Client
 
-This is the client-side of the website which is made with React and MERN Stack.
+This is the client-side of the website which is made with React and MERN Stack. The client is hosted on Netlify.
 
 ## Installation
 
